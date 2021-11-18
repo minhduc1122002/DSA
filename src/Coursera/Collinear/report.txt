@@ -1,0 +1,11 @@
+Yêu cầu: Tìm tất cả các đoạn thẳng dài nhất nối với 4 điểm hoặc nhiều hơn trong n điểm cho trước.
+
+Thuật toán:
+BruteForceCollinear(): Kiểm tra hệ số góc của tất cả các cặp 4 điểm với nhau
+		       Độ phức tạp: O(N^4)
+
+FastCollinear(): Lấy 1 điểm làm gốc, tính hệ số góc của các điểm còn lại so với điểm đó. 
+		 Nếu có ít nhất 3 điểm có hệ số góc bằng nhau so với điểm gốc thì đó là đoạn thẳng cần tìm
+		 Độ phức tạp: O(N^2*logN)
+
+Số điểm đạt được trên Coursera: 90/100

@@ -1,4 +1,4 @@
-package RandomizedQueue;
+package Coursera.RandomizedQueue;
 
 import RandomizedQueue.RandomizedQueue;
 import edu.princeton.cs.algs4.StdIn;

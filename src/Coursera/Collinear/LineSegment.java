@@ -1,4 +1,4 @@
-package Collinear;
+package Coursera.Collinear;
 
 import Collinear.Point;
 

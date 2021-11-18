@@ -1,4 +1,4 @@
-package Puzzle;
+package Coursera.Puzzle;
 
 import java.util.ArrayList;
 import java.util.List;

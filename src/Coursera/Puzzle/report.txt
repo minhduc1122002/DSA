@@ -1,0 +1,17 @@
+Yêu cầu: Cho 1 mảng n x n được đánh số từ 0 đến n*n - 1 với 0 là chỗ trống. 
+Ta phải tìm cách ngắn nhất để di chuyển các phần tử về đúng vị trí của nó.  
+
+Thuật toán
+Board: ma trận n x n
+    - hamming: trả về số ô sai vị trí
+    - manhattan: trả tổng khoảng cách đến vị trí đúng của tất cả các ô sai vị trí (ngang + dọc)
+    - neighbors: trả về 1 trong các phần tử xung quanh 1 đơn vị
+
+Solver: Tìm kiếm A*
+    - Coi các bước đi có khả năng xảy ra là 1 Node, các Node này có các chỉ số như lượt(moves) và độ ưu tiên(moves + manhattan)
+    - Đẩy các Node vào 1 PriorityQueue
+    - Thứ tự xóa các Node là: Ưu tiên các Node có độ ưu tiên nhỏ, Nếu độ ưu tiên bằng nhau thì lượt nào nhỏ hơn sẽ được ưu tiên trước
+    - Lặp đi lặp lại việc đẩy và xóa vào PriorityQueue đến khi có được mảng đúng
+
+Số điểm đạt được trên Coursera: 96/100
+

@@ -1,0 +1,9 @@
+Yêu cầu: Xây dựng Dequeue, Randomized queue.
+
+Thuật toán:
+Deque: Là queue cho phép add và remove ở cả đầu và cuối của queue (sử dụng double linked list)
+
+RandomizedQueue: là một queue mà ta phải remove ngẫu nhiên 1 phần tử (sử dụng mảng để cái đặt)
+
+Số điểm đạt được trên Coursera: 90/100
+

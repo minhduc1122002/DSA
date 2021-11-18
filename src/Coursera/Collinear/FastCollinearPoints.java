@@ -1,4 +1,4 @@
-package Collinear;
+package Coursera.Collinear;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,5 @@
-package Puzzle;
+package Coursera.Puzzle;
 
-import Puzzle.Board;
 import edu.princeton.cs.algs4.MinPQ;
 
 import java.util.ArrayList;

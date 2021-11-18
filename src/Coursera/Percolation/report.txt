@@ -1,0 +1,12 @@
+Yêu cầu: Tìm khoảng kì vọng của 1 hệ thống thẩm thấu của vật liệu. Sử dụng thư viện algs4 WeightedUnionFind
+
+Thuật toán: 
+Precolation(): Sử dụng giải thuật Monte Carlo để kiểm tra xem có Precolation không:
+	- Coi các phần tử trong vật liệu như các Node trong UF, nối các phần tử được mở lại với nhau.
+	- Ta thêm 2 Node: 1 Node nối với các Node được mở ở hàng đầu và 1 Node nối với các Node được mở ở hàng cuối.
+	- Nếu 2 Node này có bậc(Weighted) bằng nhau thì có Precolation.
+PrecolationStats(): 
+	- Lặp lại T lần việc mở ngẫu nhiên 1 phần tử đang bị chặn cho đến khi hệ thống Precolation.
+	- Tính khoảng kì vọng qua T lần đó.
+	
+Số điểm đạt được trên Coursera: 97/100
