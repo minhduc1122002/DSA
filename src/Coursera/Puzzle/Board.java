@@ -76,12 +76,15 @@ public class Board {
 
     // does this board equal y?
     public boolean equals(Object y) {
-        if (y == this)
+        if (y == this) {
             return true;
-        if (y == null)
+        }
+        if (y == null) {
             return false;
-        if (y.getClass() != this.getClass())
+        }
+        if (y.getClass() != this.getClass()) {
             return false;
+        }
 
         Board that = (Board) y;
         int [][] temp = that.getBoard();

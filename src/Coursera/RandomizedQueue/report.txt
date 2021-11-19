@@ -1,4 +1,5 @@
-Yêu cầu: Xây dựng Dequeue, Randomized queue.
+Yêu cầu:
+Xây dựng Dequeue, Randomized queue.
 
 Thuật toán:
 Deque: Là queue cho phép add và remove ở cả đầu và cuối của queue (sử dụng double linked list)

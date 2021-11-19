@@ -20,18 +20,16 @@ public class PercolationStats {
             throw new IllegalArgumentException();
         }
         double[] x = new double[trials];
-
-        int[] blockSites = new int[n * n];
-
+        int[] blocked = new int[n * n];
         for (int i = 0; i < n * n; i++) {
-            blockSites[i] = i;
+            blocked[i] = i;
         }
 
         for (int i = 0; i < trials; i++) {
-            StdRandom.shuffle(blockSites);
+            StdRandom.shuffle(blocked);
             Percolation percolation = new Percolation(n);
             for (int j = 0; j < n * n; j++) {
-                percolation.open(blockSites[j] / n + 1, blockSites[j] % n + 1);
+                percolation.open(blocked[j] / n + 1, blocked[j] % n + 1);
                 if (percolation.percolates()) {
                     break;
                 }

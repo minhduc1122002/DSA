@@ -1,4 +1,5 @@
-Yêu cầu: Cho 1 mảng n x n được đánh số từ 0 đến n*n - 1 với 0 là chỗ trống. 
+Yêu cầu:
+Cho 1 mảng n x n được đánh số từ 0 đến n*n - 1 với 0 là chỗ trống.
 Ta phải tìm cách ngắn nhất để di chuyển các phần tử về đúng vị trí của nó.  
 
 Thuật toán

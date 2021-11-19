@@ -1,4 +1,5 @@
-Yêu cầu: Tìm tất cả các đoạn thẳng dài nhất nối với 4 điểm hoặc nhiều hơn trong n điểm cho trước.
+Yêu cầu:
+Tìm tất cả các đoạn thẳng dài nhất nối với 4 điểm hoặc nhiều hơn trong n điểm cho trước.
 
 Thuật toán:
 BruteForceCollinear(): Kiểm tra hệ số góc của tất cả các cặp 4 điểm với nhau

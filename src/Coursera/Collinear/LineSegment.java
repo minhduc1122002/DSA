@@ -1,7 +1,5 @@
 package Coursera.Collinear;
 
-import Collinear.Point;
-
 public class LineSegment {
 
     private final Point p;

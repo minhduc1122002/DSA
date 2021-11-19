@@ -1,4 +1,5 @@
-Yêu cầu: Tìm khoảng kì vọng của 1 hệ thống thẩm thấu của vật liệu. Sử dụng thư viện algs4 WeightedUnionFind
+Yêu cầu:
+Tìm khoảng kì vọng của 1 hệ thống thẩm thấu của vật liệu. Sử dụng thư viện algs4 WeightedUnionFind
 
 Thuật toán: 
 Precolation(): Sử dụng giải thuật Monte Carlo để kiểm tra xem có Precolation không:

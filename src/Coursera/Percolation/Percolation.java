@@ -44,10 +44,8 @@ public class Percolation {
         if (row == size) {
             percolateUF.union(current, size * size + 1);
         }
-
         int[] dx = {-1, 0, 0, +1};
         int[] dy = {0, -1, +1, 0};
-
         for (int i = 0; i < 4; i++) {
             if (isOnSites(row + dx[i], col + dy[i]) && isOpen(row + dx[i], col + dy[i])){
                 int neighbor = code(row - 1 + dx[i], col - 1 + dy[i]);

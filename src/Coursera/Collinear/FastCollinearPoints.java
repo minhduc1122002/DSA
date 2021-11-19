@@ -35,7 +35,7 @@ public class FastCollinearPoints {
                 while (k + 1 < clone.length && slope == origin.slopeTo(temp[k + 1]) && origin.compareTo(temp[k]) < 0) {
                     k++;
                 }
-                if (k - j + 1 >= 3) {
+                if (k + 1 - j >= 3) {
                     lineSegments.add(new LineSegment(origin, temp[k]));
                 }
                 j = k + 1;

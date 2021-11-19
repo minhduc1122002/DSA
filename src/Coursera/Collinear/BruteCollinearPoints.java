@@ -31,7 +31,7 @@ public class BruteCollinearPoints {
                     double slop2 = clone[i].slopeTo(clone[k]);
                     for (int l = k + 1; l < clone.length; l++) {
                         double slop3 = clone[i].slopeTo(clone[l]);
-                        if (slop1 == slop2 && slop2 == slop3) {
+                        if (slop1 == slop3 && slop2 == slop3) {
                             lineSegments.add(new LineSegment(clone[i], clone[l]));
                         }
                     }

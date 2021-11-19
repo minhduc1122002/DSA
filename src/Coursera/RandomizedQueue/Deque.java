@@ -6,16 +6,21 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class Deque<Item> implements Iterable<Item> {
+
     private class Node {
         Item item;
+
         Node prev;
+
         Node next;
+
         Node(Item item, Node prev, Node next) {
             this.item = item;
             this.prev = prev;
             this.next = next;
         }
     }
+
     private Node first;
 
     private Node last;
@@ -44,7 +49,9 @@ public class Deque<Item> implements Iterable<Item> {
 
     // add the item to the front
     public void addFirst(Item item) {
-        if (item == null) throw new IllegalArgumentException();
+        if (item == null) {
+            throw new IllegalArgumentException();
+        }
         if (first == null) {
             first = new Node(item, null, null);
             last = first;
@@ -57,7 +64,9 @@ public class Deque<Item> implements Iterable<Item> {
 
     // add the item to the back
     public void addLast(Item item) {
-        if (item == null) throw new IllegalArgumentException();
+        if (item == null) {
+            throw new IllegalArgumentException();
+        }
         if (last == null) {
             last = new Node(item, null, null);
             first = last;

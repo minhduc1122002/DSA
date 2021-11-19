@@ -10,8 +10,11 @@ public class Solver {
 
     private class Node implements Comparable<Node> {
         private final Board current;
+
         private final Node previous;
+
         private final int moves;
+
         private final int priority;
 
         private Node(Board current, Node previous) {
