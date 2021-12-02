@@ -33,7 +33,7 @@ public class ConnectedCell {
             int[] dy = {0, +1, -1, -1, +1, 0, -1, +1};
             for (int i = 0; i < 8; i++) {
                 if ((x + dx[i] >= 0 && x + dx[i] < M) && (y + dy[i] >= 0 && y + dy[i] < N)
-                    && !visited[y + dy[i]][x + dx[i]] && grid[y + dy[i]][x + dx[i]] == 1) {
+                        && !visited[y + dy[i]][x + dx[i]] && grid[y + dy[i]][x + dx[i]] == 1) {
                     queue.add(new Cell(y + dy[i], x + dx[i]));
                     visited[y + dy[i]][x + dx[i]] = true;
                 }
@@ -43,7 +43,7 @@ public class ConnectedCell {
     }
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Week12.ShortestReach. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner scanner = new Scanner(System.in);
         N = scanner.nextInt();
         M = scanner.nextInt();
@@ -55,14 +55,14 @@ public class ConnectedCell {
                 visited[i][j] = false;
             }
         }
-        int max = count_connected(0, 1);
-        /*for (int i = 0; i < N; ++i) {
+        int max = 0;
+        for (int i = 0; i < N; ++i) {
             for (int j = 0; j < M; ++j) {
                 if (grid[i][j] == 0 || visited[i][j]) continue;
                 int cnt = count_connected(i, j);
                 if (max < cnt) max = cnt;
             }
-        }*/
+        }
         System.out.println(max);
     }
 }
